@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+
+        }
+
+
+
+        ul>li {
+            float: left;
+            /* border: 1px solid red; */
+            padding: 4px 0.5em;
+
+        }
+
+        ul {
+            /* border: 1px solid green; */
+            display: inline-block;
+
+        }
+
+        .logo {
+            display: inline-block;
+            float: left;
+            margin-top: 3px;
+            margin-left: 10px;
+        }
+
+        .logo>img {
+            height: 26px;
+            /* border: 1px solid slateblue; */
+            vertical-align: middle;
+        }
+
+        .nav {
+            float: right;
+            margin-left: 20px;
+            margin-right: 100px;
+        }
+
+        header {
+            /* border: 1px solid aqua; */
+            background-color: gray;
+        }
+
+        .content {
+            outline: 1px solid springgreen;
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content>aside {
+            border: 1px solid yellow;
+            background-color: yellow;
+            width: 200px;
+            height: 500px;
+            float: left;
+        }
+
+        .content>main {
+            border: 1px solid slateblue;
+            background-color: slateblue;
+            width: 400px;
+            height: 500px;
+            float: left;
+        }
+
+        .content>div {
+            border: 1px solid rgb(161, 15, 52);
+            background-color: rgb(161, 15, 52);
+            width: 200px;
+            height: 500px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="logo clearfix">
+            <img src="https://xiedaimala.com/packs/_/assets/images/logos/red-logo-3f8db9041e6c15d4ae7ed7e4087c4b98.png"
+                alt="">
+
+        </div>
+        <ul class="clearfix nav">
+            <li>首页</li>
+            <li>优惠</li>
+            <li>课程</li>
+            <li>关于</li>
+        </ul>
+    </header>
+    <div class="content clearfix">
+        <aside></aside>
+        <main></main>
+        <div></div>
+    </div>
+</body>
+
+</html>
